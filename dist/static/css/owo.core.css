@@ -204,6 +204,14 @@ li {
   z-index: 0;
 }
 
+.page-2 .fl {
+  float: left;
+}
+
+.page-2 .fr {
+  float: right;
+}
+
 .page-2 .so-1 {
   left: 612px;
   top: 24px;
@@ -274,12 +282,66 @@ li {
 .page-2 .card-list {
   width: 710px;
   margin: 0 auto;
-  height: 940px;
+  height: calc(100% - 280px);
   overflow: auto;
 }
 
 .page-2 .card-list img {
   margin-bottom: 20px;
+}
+
+.page-2 .card-list {
+  position: relative;
+}
+
+.page-2 .card-list li {
+  background-color: white;
+  width: 94%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.page-2 .card-list li .fl {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.page-2 .card-list li .fl img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-2 .card-list li .fr {
+  width: calc(100% - 200px);
+  height: 100%;
+  display: block;
+}
+
+.page-2 .card-list li .fr h2 {
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.page-2 .card-list li .info2 {
+  font-size: 31px;
+  line-height: 78px;
+}
+
+.page-2 .card-list li .state {
+  font-size: 25px;
+}
+
+.page-2 .card-list li .xj {
+  display: inline-block;
+  margin-right: 40px;
 }
 .page3 {
   background-color: #f5f5f5;

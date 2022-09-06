@@ -5,7 +5,25 @@
       img.so.so2-1(src="@|card32609.png|")
       input.so.so2-2
     .info 查询到6种状态结果
-    .card-list
+    ul.card-list
+      li.clear
+        .fl
+          img(src="http://49.232.216.171:8082//images/admire (5).png")
+        .fr
+          h2 名字名字
+          .info2
+            span.xj 99新
+            span.ch 串号: xxxxxxxxxxx
+          .state 状态: 已销售
+      li.clear
+        .fl
+          img(src="http://49.232.216.171:8082//images/admire (5).png")
+        .fr
+          h2 名字名字
+          .info2
+            span.xj 99新
+            span.ch 串号: xxxxxxxxxxx
+          .state 状态: 已销售
       img(src="@|card-2.png|")
       img(src="@|card-2.png|")
       img(src="@|card-2.png|")
@@ -25,7 +43,20 @@
 <script>
   module.exports = {
     created: function () {
-      
+      var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      let temp = ''
+      fetch("http://49.232.216.171:8080/commodity/all?page=1&limit=10", requestOptions)
+        .then(response => response.json())
+        .then(result => {
+          result.data.forEach(element => {
+            temp += `<li class="clear"><div class="fl"><img src="${element.picUrl.replace(';', '')}"></div><div class="fr"><h2>${element.name}</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li>`
+          });
+          document.querySelector('.card-list').innerHTML = temp
+        })
+        .catch(error => console.log('error', error));
       
     }
   }
@@ -39,6 +70,12 @@
   width: 750px;
   height: 128px;
   z-index: 0;;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
 }
 .so-1 {
   left: 612px;
@@ -103,10 +140,55 @@
 .card-list {
   width: 710px;
   margin: 0 auto;
-  height: 940px;
+  height: calc(100% - 280px);
   overflow: auto;
   img {
     margin-bottom: 20px;
+  }
+}
+.card-list {
+  position: relative;
+  li {
+    background-color: white;
+    width: 94%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    .fl {
+      width: 160px;
+      height: 160px;
+      position: relative;
+      img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .fr {
+      width: calc(100% - 200px);
+      height: 100%;
+      display: block;
+      h2 {
+        line-height: 50px;
+        font-size: 30px;
+      }
+    }
+    .info2 {
+      font-size: 31px;
+      line-height: 78px;
+    }
+    .state {
+      font-size: 25px;
+    }
+    .xj {
+      display: inline-block;
+      margin-right: 40px;
+    }
   }
 }
 </style>
