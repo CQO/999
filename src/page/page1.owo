@@ -1,0 +1,169 @@
+<template lang="pug">
+.page-1
+  .pannel
+    .scrrow-box
+      .top-bar.so.so2-0
+        .so.so2-1
+        .so.so2-2
+        .so.so2-3
+        img.so.so2-4(src="@|card12758.png|")
+        img.so.so2-5(src="@|card12555.png|")
+      .so.so3-0
+        img.so.so3-1(src="@|card22760.png|")
+        img.so.so3-2(src="@|card22761.png|")
+        img.so.so3-3(src="@|card22759.png|")
+        img.so.so3-4(src="@|card22557.png|")
+      .card-box
+        h2 基础信息
+        ul
+          li 分类
+          li 品牌
+          li 成色
+      .card-box(style="top: 950px;")
+        ul
+          li 管理员设置
+          li 订阅用户
+          li 操作日志
+  .so.so-0.bottom-bar
+    img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
+    img.so.so-2(src="@|2662.png|" go="page3//moveToLeft/moveFromRight")
+    img.so.so-3(src="@|2754.png|" go="page2//moveToRight/moveFromLeft")
+    img.so.so-4(src="@|2625.png|")
+
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      
+      
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-0 {
+  left: 0px;
+  bottom: 0;
+  width: 750px;
+  height: 128px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 612px;
+  top: 24px;
+  z-index: -1;
+}
+.so-2 {
+  left: 354px;
+  top: 31px;
+  z-index: -2;
+}
+.so-3 {
+  left: 94px;
+  top: 24px;
+  z-index: -3;
+}
+.so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+.so2-0 {
+  left: 20px;
+  top: 77px;
+  width: 710px;
+  height: 214px;
+  z-index: 0;;
+}
+.so2-1 {
+  left: 189px;
+  top: 117px;
+  width: 138px;
+  height: 26px;
+  z-index: -1;
+  background-image: url('@|card12552.png|');;
+}
+.so2-2 {
+  left: 189px;
+  top: 73px;
+  width: 137px;
+  height: 26px;
+  z-index: -2;
+  background-image: url('@|card12551.png|');;
+}
+.so2-3 {
+  left: 40px;
+  top: 52px;
+  width: 110px;
+  height: 110px;
+  z-index: -3;
+  background-image: url('@|card12757.png|');;
+}
+.so2-4 {
+  left: 674px;
+  top: 92px;
+  z-index: -4;
+}
+.so2-5 {
+  left: 0px;
+  top: 0px;
+  z-index: -5;
+}
+.so3-0 {
+  left: 20px;
+  top: 311px;
+  width: 710px;
+  height: 147px;
+  z-index: 0;;
+}
+.so3-1 {
+  left: 316px;
+  top: 31px;
+  z-index: -1;
+}
+.so3-2 {
+  left: 557px;
+  top: 31px;
+  z-index: -2;
+}
+.so3-3 {
+  left: 74px;
+  top: 31px;
+  z-index: -3;
+}
+.so3-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+.card-box {
+  background-color: white;
+  position: absolute;
+  top: 480px;
+  width: 650px;
+  left: 20px;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 22px;
+  h2 {
+    line-height: 65px;
+  }
+  li {
+    background-image: url('@|card-bg.png|');
+    background-repeat: no-repeat;
+    width: 630px;
+    height: 60px;
+    border-bottom: 1px solid #f7eaea;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background-position: center;
+    line-height: 60px;
+    font-size: 32px;
+  }
+}
+.pannel {
+  background-image: url('@|top.png|');
+}
+</style>

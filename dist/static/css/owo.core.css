@@ -1,0 +1,450 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.page-1 .so-0 {
+  left: 0px;
+  bottom: 0;
+  width: 750px;
+  height: 128px;
+  z-index: 0;
+}
+
+.page-1 .so-1 {
+  left: 612px;
+  top: 24px;
+  z-index: -1;
+}
+
+.page-1 .so-2 {
+  left: 354px;
+  top: 31px;
+  z-index: -2;
+}
+
+.page-1 .so-3 {
+  left: 94px;
+  top: 24px;
+  z-index: -3;
+}
+
+.page-1 .so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+
+.page-1 .so2-0 {
+  left: 20px;
+  top: 77px;
+  width: 710px;
+  height: 214px;
+  z-index: 0;
+}
+
+.page-1 .so2-1 {
+  left: 189px;
+  top: 117px;
+  width: 138px;
+  height: 26px;
+  z-index: -1;
+  background-image: url('../images/card12552.png');
+}
+
+.page-1 .so2-2 {
+  left: 189px;
+  top: 73px;
+  width: 137px;
+  height: 26px;
+  z-index: -2;
+  background-image: url('../images/card12551.png');
+}
+
+.page-1 .so2-3 {
+  left: 40px;
+  top: 52px;
+  width: 110px;
+  height: 110px;
+  z-index: -3;
+  background-image: url('../images/card12757.png');
+}
+
+.page-1 .so2-4 {
+  left: 674px;
+  top: 92px;
+  z-index: -4;
+}
+
+.page-1 .so2-5 {
+  left: 0px;
+  top: 0px;
+  z-index: -5;
+}
+
+.page-1 .so3-0 {
+  left: 20px;
+  top: 311px;
+  width: 710px;
+  height: 147px;
+  z-index: 0;
+}
+
+.page-1 .so3-1 {
+  left: 316px;
+  top: 31px;
+  z-index: -1;
+}
+
+.page-1 .so3-2 {
+  left: 557px;
+  top: 31px;
+  z-index: -2;
+}
+
+.page-1 .so3-3 {
+  left: 74px;
+  top: 31px;
+  z-index: -3;
+}
+
+.page-1 .so3-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+
+.page-1 .card-box {
+  background-color: white;
+  position: absolute;
+  top: 480px;
+  width: 650px;
+  left: 20px;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 22px;
+}
+
+.page-1 .card-box h2 {
+  line-height: 65px;
+}
+
+.page-1 .card-box li {
+  background-image: url('../images/card-bg.png');
+  background-repeat: no-repeat;
+  width: 630px;
+  height: 60px;
+  border-bottom: 1px solid #f7eaea;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  background-position: center;
+  line-height: 60px;
+  font-size: 32px;
+}
+
+.page-1 .pannel {
+  background-image: url('../images/top.png');
+}
+.page-2 .so-0 {
+  left: 0px;
+  bottom: 0;
+  width: 750px;
+  height: 128px;
+  z-index: 0;
+}
+
+.page-2 .so-1 {
+  left: 612px;
+  top: 24px;
+  z-index: -1;
+}
+
+.page-2 .so-2 {
+  left: 354px;
+  top: 31px;
+  z-index: -2;
+}
+
+.page-2 .so-3 {
+  left: 94px;
+  top: 24px;
+  z-index: -3;
+}
+
+.page-2 .so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+
+.page-2 .so2-0 {
+  left: 20px;
+  width: 710px;
+  height: 60px;
+  z-index: 0;
+  position: relative;
+  margin-top: 96px;
+  margin-bottom: 36px;
+}
+
+.page-2 .so2-1 {
+  left: 580px;
+  top: 0px;
+  z-index: -1;
+}
+
+.page-2 .so2-2 {
+  left: 0px;
+  top: 0px;
+  width: 630px;
+  height: 60px;
+  z-index: -2;
+  background: none;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 25px;
+  padding: 0 10px;
+  padding-left: 80px;
+  background-image: url('../images/card32610.png');
+}
+
+.page-2 .pannel {
+  background-image: url('../images/toubu.png');
+}
+
+.page-2 .info {
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.page-2 .card-list {
+  width: 710px;
+  margin: 0 auto;
+  height: 940px;
+  overflow: auto;
+}
+
+.page-2 .card-list img {
+  margin-bottom: 20px;
+}
+.page3 {
+  background-color: #f5f5f5;
+}
+
+.page3 .so-0 {
+  left: 31px;
+  width: 699px;
+  height: 60px;
+  z-index: 0;
+  margin-top: 30px;
+  position: relative;
+}
+
+.page3 .so-1 {
+  left: 0px;
+  top: 17px;
+  z-index: -1;
+}
+
+.page3 .so-2 {
+  left: 419px;
+  top: 0px;
+  z-index: -2;
+}
+
+.page3 .so-3 {
+  left: 569px;
+  top: 0px;
+  z-index: -3;
+}
+
+.page3 .jiage-bar {
+  background-image: url(../images/jiage.png);
+  height: 80px;
+  background-repeat: no-repeat;
+  text-align: right;
+  font-size: 40px;
+  color: red;
+  line-height: 80px;
+  margin: 0 30px;
+  background-position: center left;
+}
+
+.page3 textarea {
+  margin: 30px 30px;
+  display: block;
+  width: 690px;
+  height: 280px;
+  border-color: #ccc;
+}
+
+.page3 .upload {
+  margin: 0 30px;
+}
+
+.page3 .select-box {
+  display: flex;
+  justify-content: space-around;
+  font-size: 27px;
+}
+
+.page3 .select-box select {
+  background-image: url('../images/select-box.png');
+  border: navajowhite;
+  outline: none;
+  background-color: transparent;
+  width: 222px;
+  height: 54px;
+  font-size: 27px;
+  padding: 0 10px;
+}
+
+.page3 .white-1 {
+  padding-top: 10px;
+}
+
+.page3 .white {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.page3 .card-li .item {
+  background-color: white;
+  margin: 10px 15px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 19px;
+}
+
+.page3 .card-li .item span {
+  font-size: 31px;
+  width: 160px;
+  display: inline-block;
+  text-align: center;
+}
+
+.page3 .card-li .item input {
+  display: inline-block;
+  border: none;
+  width: 500px;
+  height: 60px;
+  font-size: 33px;
+  color: #666;
+}
+
+/* 页面切换动画 */
+.o-page-moveToLeft {
+	-webkit-animation: moveToLeft .6s ease both;
+	-moz-animation: moveToLeft .6s ease both;
+	animation: moveToLeft .6s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+	to { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveToLeft {
+	to { -moz-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+	to { transform: translateX(-100%); }
+}
+.o-page-moveFromRight {
+	-webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveFromRight .6s ease both;
+}
+
+@-webkit-keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRight {
+	from { -moz-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+	from { transform: translateX(100%); }
+}
+.o-page-moveToRight {
+	-webkit-animation: moveToRight .6s ease both;
+	-moz-animation: moveToRight .6s ease both;
+	animation: moveToRight .6s ease both;
+}
+
+@-webkit-keyframes moveToRight { 
+	to { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveToRight { 
+	to { -moz-transform: translateX(100%); }
+}
+@keyframes moveToRight { 
+	to { transform: translateX(100%); }
+}
+.o-page-moveFromLeft {
+	-webkit-animation: moveFromLeft .6s ease both;
+	-moz-animation: moveFromLeft .6s ease both;
+	animation: moveFromLeft .6s ease both;
+}
+
+@-webkit-keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveFromLeft {
+	from { -moz-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+	from { transform: translateX(-100%); }
+}
+

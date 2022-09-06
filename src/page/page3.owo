@@ -1,0 +1,137 @@
+<template lang="pug">
+.page3
+  .pannel
+    .white.white-1
+      .so-0
+        img.so.so-1(src="@|2785.png|" go="page1")
+        img.so.so-2(src="@|2787.png|")
+        img.so.so-3(src="@|2788.png|")
+      textarea
+      .upload
+        img(src="@|updata.png|")
+    .white
+      .jiage-bar ￥:2999.00
+    .select-box.select3
+      select
+        option(value="volvo") volvo
+      select
+        option(value="volvo") volvo
+      select
+        option(value="volvo") volvo
+    ul.card-li
+      .item
+        span 保修
+        input(type="text")
+      .item
+        span 功能
+        input(type="text")
+      .item
+        span 外观
+        input(type="text")
+      .item
+        span 电池
+        input(type="text")
+      .item
+        span 串号
+        input(type="text")
+      .item
+        span 备注
+        input(type="text")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.page3 {
+  background-color: #f5f5f5;
+}
+.so-0 {
+  left: 31px;
+  width: 699px;
+  height: 60px;
+  z-index: 0;
+  margin-top: 30px;
+  position: relative;
+}
+.so-1 {
+  left: 0px;
+  top: 17px;
+  z-index: -1;
+}
+.so-2 {
+  left: 419px;
+  top: 0px;
+  z-index: -2;
+}
+.so-3 {
+  left: 569px;
+  top: 0px;
+  z-index: -3;
+}
+.jiage-bar {
+  background-image: url(@|jiage.png|);
+  height: 80px;
+  background-repeat: no-repeat;
+  text-align: right;
+  font-size: 40px;
+  color: red;
+  line-height: 80px;
+  margin: 0 30px;
+  background-position: center left;
+}
+textarea {
+  margin: 30px 30px;
+  display: block;
+  width: 690px;
+  height: 280px;
+  border-color: #ccc;
+}
+.upload {
+  margin: 0 30px;
+}
+.select-box {
+  display: flex;
+  justify-content: space-around;
+  font-size: 27px;
+  select {
+    background-image: url('@|select-box.png|');
+    border: navajowhite;
+    outline: none;
+    background-color: transparent;
+    width: 222px;
+    height: 54px;
+    font-size: 27px;
+    padding: 0 10px;
+  }
+}
+.white-1 {
+  padding-top: 10px;
+}
+.white {
+  background-color: white;
+  
+  margin-bottom: 10px;
+}
+.card-li .item {
+  background-color: white;
+  margin: 10px 15px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 19px;
+  span {
+    font-size: 31px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+  }
+  input {
+    display: inline-block;
+    border: none;
+    width: 500px;
+    height: 60px;
+    font-size: 33px;
+    color: #666;
+  }
+}
+</style>
