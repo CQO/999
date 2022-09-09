@@ -282,7 +282,7 @@ li {
 .page-2 .card-list {
   width: 710px;
   margin: 0 auto;
-  height: calc(100% - 280px);
+  height: calc(100vh + 275px);
   overflow: auto;
 }
 
@@ -447,7 +447,74 @@ li {
   font-size: 33px;
   color: #666;
 }
+.page4 .white {
+  padding-top: 30px;
+  background-color: white;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
 
+.page4 .so-0 {
+  left: 31px;
+  width: 699px;
+  height: 60px;
+  z-index: 0;
+  position: relative;
+}
+
+.page4 .so-1 {
+  left: 0px;
+  top: 17px;
+  z-index: -1;
+}
+
+.page4 .so-2 {
+  left: 419px;
+  top: 0px;
+  z-index: -2;
+}
+
+.page4 .so-3 {
+  left: 569px;
+  top: 0px;
+  z-index: -3;
+}
+
+.page4 .layui-form-item {
+  background-color: white;
+  font-size: 28px;
+  width: 96%;
+  margin: 0 auto;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.page4 .layui-form-item .layui-form-label {
+  line-height: 60px;
+  text-align: left;
+}
+
+.page4 .layui-form-item .layui-input-block input {
+  height: 80px;
+  border: none;
+}
+
+.page4 .bottom-bar {
+  margin: 0;
+}
+
+.page4 button[type="button"],
+.page4 .bottom-bar button {
+  width: 96%;
+  display: block;
+  margin: 0 auto;
+  line-height: 80px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 /* 页面切换动画 */
 .o-page-moveToLeft {
 	-webkit-animation: moveToLeft .6s ease both;

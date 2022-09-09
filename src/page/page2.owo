@@ -34,7 +34,7 @@
       img(src="@|card-2.png|")
   .so.so-0.bottom-bar
     img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
-    img.so.so-2(src="@|2662.png|" go="page3//")
+    img.so.so-2(src="@|2662.png|" go="page4//")
     img.so.so-3(src="@|2754.png|" go="page2//moveToRight/moveFromLeft")
     img.so.so-4(src="@|2625.png|")
 
@@ -43,6 +43,7 @@
 <script>
   module.exports = {
     created: function () {
+      this.query('.card-list').style.height = autoScaleInfo.showHeight - 394 + 'px'
       var requestOptions = {
         method: 'GET',
         redirect: 'follow'
@@ -140,7 +141,7 @@
 .card-list {
   width: 710px;
   margin: 0 auto;
-  height: calc(100% - 280px);
+  height: calc(100vh + 275px);
   overflow: auto;
   img {
     margin-bottom: 20px;

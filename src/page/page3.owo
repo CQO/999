@@ -37,6 +37,7 @@
       .item
         span 备注
         input(type="text")
+    
 </template>
 <script>
 module.exports = {

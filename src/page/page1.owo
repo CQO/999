@@ -26,7 +26,7 @@
           li 操作日志
   .so.so-0.bottom-bar
     img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
-    img.so.so-2(src="@|2662.png|" go="page3//moveToLeft/moveFromRight")
+    img.so.so-2(src="@|2662.png|" go="page4//moveToLeft/moveFromRight")
     img.so.so-3(src="@|2754.png|" go="page2//moveToRight/moveFromLeft")
     img.so.so-4(src="@|2625.png|")
 

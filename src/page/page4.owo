@@ -1,5 +1,94 @@
-<template lang="pug">
-.page4
+<template>
+<div class="page4 pannel">
+<div class="white">
+  <div class="so-0">
+    <img class="so so-1" src="@|2785.png|" go="page1">
+    <img class="so so-2" src="@|2787.png|">
+    <img class="so so-3" src="@|2788.png|">
+  </div>
+</div>
+
+<form class="layui-form" lay-filter="depart-edit-form" id="depart-edit-form">
+  <input type="hidden" name="id" id="id">
+  <input type="hidden" name="parentId" id="parentId">
+  <div class="layui-form-item">
+      <label class="layui-form-label">名称：</label>
+      <div class="layui-input-block">
+          <input type="text" name="name" required="" lay-verify="required" placeholder="请输入name" autocomplete="off" class="layui-input">
+      </div>
+  </div>
+  <div class="layui-form-item">
+      <label class="layui-form-label">品牌：</label>
+      <div class="layui-input-block">
+          <select id="brand" name="brand" lay-verify="required">
+              <option value=""></option>
+            <option value="brand1">brand1</option> <option value="brand2">brand2</option> <option value="brand3">brand3</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit" style=""><dd lay-value="" class="layui-select-tips layui-this">请选择</dd><dd lay-value="brand1" class="">brand1</dd><dd lay-value="brand2" class="">brand2</dd><dd lay-value="brand3" class="">brand3</dd></dl></div>
+      </div>
+  </div>
+  <div class="layui-form-item">
+      <label class="layui-form-label">条件：</label>
+      <div class="layui-input-block">
+          <select id="condition" name="condition" lay-verify="required">
+              <option value=""></option>
+            <option value="condition2">condition2</option> <option value="condition3">condition3</option> <option value="condition4">condition4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="condition2" class="">condition2</dd><dd lay-value="condition3" class="">condition3</dd><dd lay-value="condition4" class="">condition4</dd></dl></div>
+      </div>
+  </div>
+  <div class="layui-row layui-col-space10 layui-form-item">
+      <div class="layui-col-lg6">
+          <label class="layui-form-label">网络：</label>
+          <div class="layui-input-block">
+              <select id="network" name="network" lay-verify="required">
+                  <option value=""></option>
+                <option value="network3">network3</option> <option value="network4">network4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="network3" class="">network3</dd><dd lay-value="network4" class="">network4</dd></dl></div>
+          </div>
+      </div>
+  </div>
+  <div class="layui-row layui-col-space10 layui-form-item">
+      <div class="layui-col-lg6">
+          <label class="layui-form-label">版本：</label>
+          <div class="layui-input-block">
+              <select id="edition" name="edition" lay-verify="required">
+                  <option value=""></option>
+                <option value="edtion2">edtion2</option> <option value="edtion3">edtion3</option> <option value="edtion4">edtion4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="edtion2" class="">edtion2</dd><dd lay-value="edtion3" class="">edtion3</dd><dd lay-value="edtion4" class="">edtion4</dd></dl></div>
+          </div>
+      </div>
+  </div>
+  <div class="layui-form-item">
+      <label class="layui-form-label">IMEI串号：</label>
+      <div class="layui-input-block">
+          <select id="imei" name="imei" lay-verify="required">
+              <option value=""></option>
+            <option value="imei1">imei1</option> <option value="imei2">imei2</option> <option value="imei3">imei3</option> <option value="imei4">imei4</option> <option value="imei5">imei5</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="imei1" class="">imei1</dd><dd lay-value="imei2" class="">imei2</dd><dd lay-value="imei3" class="">imei3</dd><dd lay-value="imei4" class="">imei4</dd><dd lay-value="imei5" class="">imei5</dd></dl></div>
+      </div>
+  </div>
+  <div class="layui-upload" id="uploadImg">
+      <input name="picUrl" id="picUrlId" type="hidden" class="layui-input">
+      <button type="button" class="layui-btn layui-btn-normal" id="checkImg">
+          <i class="layui-icon"></i>选择图片
+      </button><input class="layui-upload-file" type="file" accept="" name="file" multiple="">
+      <div class="layui-upload-list">
+          <table class="layui-table" id="imgTable">
+              <thead>
+              <tr>
+                  <th>图片名</th>
+                  <th>大小</th>
+                  <th>状态</th>
+                  <th>图片路径</th>
+              </tr>
+              </thead>
+              <tbody id="imgList"></tbody>
+          </table>
+      </div>
+      <button type="button" class="layui-btn" id="uploadAction">
+          开始上传
+      </button>
+  </div>
+  <div class="layui-input-block bottom-bar">
+      <button class="layui-btn" lay-submit="" lay-filter="commodityCommit">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+  </div>
+</form>
+</div>
   
 </template>
 <script>
@@ -7,4 +96,62 @@ module.exports = {
 }
 </script>
 <style lang="less">
+.white {
+  padding-top: 30px;
+  background-color: white;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.so-0 {
+  left: 31px;
+  width: 699px;
+  height: 60px;
+  z-index: 0;
+  position: relative;
+}
+.so-1 {
+  left: 0px;
+  top: 17px;
+  z-index: -1;
+}
+.so-2 {
+  left: 419px;
+  top: 0px;
+  z-index: -2;
+}
+.so-3 {
+  left: 569px;
+  top: 0px;
+  z-index: -3;
+}
+.layui-form-item {
+  background-color: white;
+  font-size: 28px;
+  width: 96%;
+  margin: 0 auto;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  .layui-form-label {
+    line-height: 60px;
+    text-align: left;
+  }
+  .layui-input-block input {
+    height: 80px;
+    border: none;
+  }
+}
+.bottom-bar {
+  margin: 0;
+}
+button[type="button"], .bottom-bar button {
+  width: 96%;
+  display: block;
+  margin: 0 auto;
+  line-height: 80px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 </style>

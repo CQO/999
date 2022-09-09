@@ -82,6 +82,10 @@
 			"src": "https://cunchu.site/owo/plug/autoScale.js"
 		},
 		{
+			"name": "layui",
+			"src": "http://49.232.216.171:8080/static/layui/layui.js"
+		},
+		{
 			"name": "main",
 			"src": "./src/main.js",
 			"resource": true
@@ -92,6 +96,10 @@
 			"name": "main",
 			"src": "./src/main.css",
 			"resource": true
+		},
+		{
+			"name": "layui",
+			"src": "http://49.232.216.171:8080/static/layui/css/layui.css"
 		}
 	],
 	"pageList": [
