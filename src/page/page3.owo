@@ -1,43 +1,44 @@
 <template lang="pug">
 .page3
-  .pannel
-    .white.white-1
-      .so-0
-        img.so.so-1(src="@|2785.png|" go="page1")
-        img.so.so-2(src="@|2787.png|")
-        img.so.so-3(src="@|2788.png|")
-      textarea
-      .upload
-        img(src="@|updata.png|")
-    .white
-      .jiage-bar ￥:2999.00
-    .select-box.select3
-      select
-        option(value="volvo") volvo
-      select
-        option(value="volvo") volvo
-      select
-        option(value="volvo") volvo
-    ul.card-li
-      .item
-        span 保修
-        input(type="text")
-      .item
-        span 功能
-        input(type="text")
-      .item
-        span 外观
-        input(type="text")
-      .item
-        span 电池
-        input(type="text")
-      .item
-        span 串号
-        input(type="text")
-      .item
-        span 备注
-        input(type="text")
-    
+  .scale-box
+    .pannel
+      .white.white-1
+        .so-0
+          img.so.so-1(src="@|2785.png|" go="page1")
+          img.so.so-2(src="@|2787.png|")
+          img.so.so-3(src="@|2788.png|")
+        textarea
+        .upload
+          img(src="@|updata.png|")
+      .white
+        .jiage-bar ￥:2999.00
+      .select-box.select3
+        select
+          option(value="volvo") volvo
+        select
+          option(value="volvo") volvo
+        select
+          option(value="volvo") volvo
+      ul.card-li
+        .item
+          span 保修
+          input(type="text")
+        .item
+          span 功能
+          input(type="text")
+        .item
+          span 外观
+          input(type="text")
+        .item
+          span 电池
+          input(type="text")
+        .item
+          span 串号
+          input(type="text")
+        .item
+          span 备注
+          input(type="text")
+      
 </template>
 <script>
 module.exports = {

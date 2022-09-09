@@ -1,42 +1,43 @@
 <template lang="pug">
 .page-2
-  .pannel
-    .so2-0
-      img.so.so2-1(src="@|card32609.png|")
-      input.so.so2-2
-    .info 查询到6种状态结果
-    ul.card-list
-      li.clear
-        .fl
-          img(src="http://49.232.216.171:8082//images/admire (5).png")
-        .fr
-          h2 名字名字
-          .info2
-            span.xj 99新
-            span.ch 串号: xxxxxxxxxxx
-          .state 状态: 已销售
-      li.clear
-        .fl
-          img(src="http://49.232.216.171:8082//images/admire (5).png")
-        .fr
-          h2 名字名字
-          .info2
-            span.xj 99新
-            span.ch 串号: xxxxxxxxxxx
-          .state 状态: 已销售
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-      img(src="@|card-2.png|")
-  .so.so-0.bottom-bar
-    img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
-    img.so.so-2(src="@|2662.png|" go="page4//")
-    img.so.so-3(src="@|2754.png|" go="page2//moveToRight/moveFromLeft")
-    img.so.so-4(src="@|2625.png|")
+  .scale-box
+    .pannel
+      .so2-0
+        img.so.so2-1(src="@|card32609.png|")
+        input.so.so2-2
+      .info 查询到6种状态结果
+      ul.card-list
+        li.clear
+          .fl
+            img(src="http://49.232.216.171:8082//images/admire (5).png")
+          .fr
+            h2 名字名字
+            .info2
+              span.xj 99新
+              span.ch 串号: xxxxxxxxxxx
+            .state 状态: 已销售
+        li.clear
+          .fl
+            img(src="http://49.232.216.171:8082//images/admire (5).png")
+          .fr
+            h2 名字名字
+            .info2
+              span.xj 99新
+              span.ch 串号: xxxxxxxxxxx
+            .state 状态: 已销售
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+        img(src="@|card-2.png|")
+    .so.so-0.bottom-bar
+      img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
+      img.so.so-2(src="@|2662.png|" go="page4//")
+      img.so.so-3(src="@|2754.png|" go="page2//moveToRight/moveFromLeft")
+      img.so.so-4(src="@|2625.png|")
 
 </template>
 
