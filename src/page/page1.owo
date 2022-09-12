@@ -17,14 +17,16 @@
         .card-box
           h2 基础信息
           ul
-            li 分类
-            li 品牌
-            li 成色
-        .card-box(style="top: 950px;")
-          ul
-            li 管理员设置
-            li 订阅用户
-            li 操作日志
+            li(go="page5") 品牌管理
+            li(go="page6") 状态管理
+            li(go="page7") 版本管理
+            li(go="page8") 串号管理
+            li(go="page9") 网络管理
+        //- .card-box(style="top: 950px;")
+        //-   ul
+        //-     li 管理员设置
+        //-     li 订阅用户
+        //-     li 操作日志
     .so.so-0.bottom-bar
       img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
       img.so.so-2(src="@|2662.png|" go="page4//moveToLeft/moveFromRight")
@@ -150,6 +152,7 @@
   font-size: 22px;
   h2 {
     line-height: 65px;
+    margin-bottom: 20px;
   }
   li {
     background-image: url('@|card-bg.png|');

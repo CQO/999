@@ -1,434 +1,1767 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <!-- 页面的元信息 -->
-    <title>{TAG_14226_TAG}</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
-      
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-    <link rel="stylesheet" href="http://49.232.216.171:8080/static/layui/css/layui.css" charset="utf-8">
-      
-  </head>
-  <body>
-    
-    <!-- 页面[login]-->
-    <div class="login page" template="login" style="display: none;"><div class="router" view="loginContent"><div class="view-login" route="login"><div class="image-box"><img src="//cunchu.site/puge/login/image-box.png"></div><div class="hellow-text">嗨，欢迎回来!</div><div class="user-name-bar input-bar"><img class="bar-icon" src="//cunchu.site/puge/login/user.png"><input type="text" o-value="this.data.username" placeholder="用户名"></div><div class="pass-word-bar input-bar"><img class="bar-icon" src="//cunchu.site/puge/login/password.png"><input type="password" o-value="this.data.password" placeholder="密码"></div><div class="button-box"><div class="button" o-tap="login" o-hover="radial-out">登录</div><div class="button" o-hover="radial-out" style=" background-color: burlywood;" go="/view-loginContent=register">注册</div></div><div class="tool-bar"><div class="left"></div><div class="right" go-route="">忘记密码</div></div></div><div class="view-register" route="register"><img class="bg-1" src="//cunchu.site/puge/login/art.png"><p>欢迎注册PUGE账号</p><input class="register-input" type="text" o-value="this.data.registerusername" placeholder="用户名"><input class="register-input" type="password" o-value="this.data.registerPassWord" placeholder="密码"><input class="register-input" type="password" o-value="this.data.registerPassWordR" placeholder="确认密码"><div class="mini-box clear"><input class="register-input" type="text" o-value="this.data.registerPhone" placeholder="手机号码"><div class="button" o-tap="sendSMS">发送验证码</div></div><input class="register-input" type="text" o-value="this.data.registerCode" placeholder="验证码"><div class="button" o-tap="register">注册</div></div></div></div>
-    <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><div class="scale-box"><div class="pannel"><div class="scrrow-box"><div class="top-bar so so2-0"><div class="so so2-1"></div><div class="so so2-2"></div><div class="so so2-3"></div><img class="so so2-4" src="./static/images/card12758.png"><img class="so so2-5" src="./static/images/card12555.png"></div><div class="so so3-0"><img class="so so3-1" src="./static/images/card22760.png"><img class="so so3-2" src="./static/images/card22761.png"><img class="so so3-3" src="./static/images/card22759.png"><img class="so so3-4" src="./static/images/card22557.png"></div><div class="card-box"><h2>基础信息</h2><ul><li>分类</li><li>品牌</li><li>成色</li></ul></div><div class="card-box" style="top: 950px;"><ul><li>管理员设置</li><li>订阅用户</li><li>操作日志</li></ul></div></div></div><div class="so so-0 bottom-bar"><img class="so so-1" src="./static/images/2753.png" go="page1//moveToLeft/moveFromRight"><img class="so so-2" src="./static/images/2662.png" go="page4//moveToLeft/moveFromRight"><img class="so so-3" src="./static/images/2754.png" go="page2//moveToRight/moveFromLeft"><img class="so so-4" src="./static/images/2625.png"></div></div></div>
-    <!-- 页面[page2]-->
-    <div class="page-2 page" template="page2" style="display: none;"><div class="scale-box"><div class="pannel"><div class="so2-0"><img class="so so2-1" src="./static/images/card32609.png"><input class="so so2-2"></div><div class="info">查询到6种状态结果</div><ul class="card-list"><li class="clear"><div class="fl"><img src="http://49.232.216.171:8082//images/admire (5).png"></div><div class="fr"><h2>名字名字</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li><li class="clear"><div class="fl"><img src="http://49.232.216.171:8082//images/admire (5).png"></div><div class="fr"><h2>名字名字</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"><img src="./static/images/card-2.png"></ul></div><div class="so so-0 bottom-bar"><img class="so so-1" src="./static/images/2753.png" go="page1//moveToLeft/moveFromRight"><img class="so so-2" src="./static/images/2662.png" go="page4//"><img class="so so-3" src="./static/images/2754.png" go="page2//moveToRight/moveFromLeft"><img class="so so-4" src="./static/images/2625.png"></div></div></div>
-    <!-- 页面[page3]-->
-    <div class="page3 page" template="page3" style="display: none;"><div class="scale-box"><div class="pannel"><div class="white white-1"><div class="so-0"><img class="so so-1" src="./static/images/2785.png" go="page1"><img class="so so-2" src="./static/images/2787.png"><img class="so so-3" src="./static/images/2788.png"></div><textarea></textarea><div class="upload"><img src="./static/images/updata.png"></div></div><div class="white"><div class="jiage-bar">￥:2999.00</div></div><div class="select-box select3"><select><option value="volvo">volvo</option></select><select><option value="volvo">volvo</option></select><select><option value="volvo">volvo</option></select></div><ul class="card-li"><div class="item"><span>保修</span><input type="text"></div><div class="item"><span>功能</span><input type="text"></div><div class="item"><span>外观</span><input type="text"></div><div class="item"><span>电池</span><input type="text"></div><div class="item"><span>串号</span><input type="text"></div><div class="item"><span>备注</span><input type="text"></div></ul></div></div></div>
-    <!-- 页面[page4]-->
-    <div class="page4 page" template="page4" style="display: none;">
-  <div class="scale-box">
-    <div class="pannel">
-      <div class="white">
-        <div class="so-0">
-          <img class="so so-1" src="./static/images/2785.png" go="page1">
-          <img class="so so-2" src="./static/images/2787.png">
-          <img class="so so-3" src="./static/images/2788.png">
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+  <link rel="stylesheet" href="https://cunchu.site/owo/plug/layui/css/layui.css" charset="utf-8">
+
+</head>
+
+<body>
+
+  <!-- 页面[login]-->
+  <div class="login page" template="login" style="display: none;">
+    <div class="router" view="loginContent">
+      <div class="view-login" route="login">
+        <div class="image-box">
+          <img src="//cunchu.site/puge/login/image-box.png">
+        </div>
+        <div class="hellow-text">嗨，欢迎回来!</div>
+        <div class="user-name-bar input-bar">
+          <img class="bar-icon" src="//cunchu.site/puge/login/user.png">
+          <input type="text" o-value="this.data.username" placeholder="用户名">
+        </div>
+        <div class="pass-word-bar input-bar">
+          <img class="bar-icon" src="//cunchu.site/puge/login/password.png">
+          <input type="password" o-value="this.data.password" placeholder="密码">
+        </div>
+        <div class="button-box">
+          <div class="button" o-tap="login" o-hover="radial-out">登录</div>
+        </div>
+        <div class="tool-bar">
+          <div class="left"></div>
         </div>
       </div>
-
-      <form class="layui-form" lay-filter="depart-edit-form" id="depart-edit-form">
-        <input type="hidden" name="id" id="id">
-        <input type="hidden" name="parentId" id="parentId">
-        <div class="layui-form-item">
-            <label class="layui-form-label">名称：</label>
-            <div class="layui-input-block">
-                <input type="text" name="name" required="" lay-verify="required" placeholder="请输入name" autocomplete="off" class="layui-input">
-            </div>
+      <div class="view-register" route="register">
+        <img class="bg-1" src="//cunchu.site/puge/login/art.png">
+        <p>欢迎注册PUGE账号</p>
+        <input class="register-input" type="text" o-value="this.data.registerusername" placeholder="用户名">
+        <input class="register-input" type="password" o-value="this.data.registerPassWord" placeholder="密码">
+        <input class="register-input" type="password" o-value="this.data.registerPassWordR" placeholder="确认密码">
+        <div class="mini-box clear">
+          <input class="register-input" type="text" o-value="this.data.registerPhone" placeholder="手机号码">
+          <div class="button" o-tap="sendSMS">发送验证码</div>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">品牌：</label>
-            <div class="layui-input-block">
-                <select id="brand" name="brand" lay-verify="required">
-                    <option value=""></option>
-                  <option value="brand1">brand1</option> <option value="brand2">brand2</option> <option value="brand3">brand3</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit" style=""><dd lay-value="" class="layui-select-tips layui-this">请选择</dd><dd lay-value="brand1" class="">brand1</dd><dd lay-value="brand2" class="">brand2</dd><dd lay-value="brand3" class="">brand3</dd></dl></div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">条件：</label>
-            <div class="layui-input-block">
-                <select id="condition" name="condition" lay-verify="required">
-                    <option value=""></option>
-                  <option value="condition2">condition2</option> <option value="condition3">condition3</option> <option value="condition4">condition4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="condition2" class="">condition2</dd><dd lay-value="condition3" class="">condition3</dd><dd lay-value="condition4" class="">condition4</dd></dl></div>
-            </div>
-        </div>
-        <div class="layui-row layui-col-space10 layui-form-item">
-            <div class="layui-col-lg6">
-                <label class="layui-form-label">网络：</label>
-                <div class="layui-input-block">
-                    <select id="network" name="network" lay-verify="required">
-                        <option value=""></option>
-                      <option value="network3">network3</option> <option value="network4">network4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="network3" class="">network3</dd><dd lay-value="network4" class="">network4</dd></dl></div>
-                </div>
-            </div>
-        </div>
-        <div class="layui-row layui-col-space10 layui-form-item">
-            <div class="layui-col-lg6">
-                <label class="layui-form-label">版本：</label>
-                <div class="layui-input-block">
-                    <select id="edition" name="edition" lay-verify="required">
-                        <option value=""></option>
-                      <option value="edtion2">edtion2</option> <option value="edtion3">edtion3</option> <option value="edtion4">edtion4</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="edtion2" class="">edtion2</dd><dd lay-value="edtion3" class="">edtion3</dd><dd lay-value="edtion4" class="">edtion4</dd></dl></div>
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">IMEI串号：</label>
-            <div class="layui-input-block">
-                <select id="imei" name="imei" lay-verify="required">
-                    <option value=""></option>
-                  <option value="imei1">imei1</option> <option value="imei2">imei2</option> <option value="imei3">imei3</option> <option value="imei4">imei4</option> <option value="imei5">imei5</option></select><div class="layui-unselect layui-form-select"><div class="layui-select-title"><input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div><dl class="layui-anim layui-anim-upbit"><dd lay-value="" class="layui-select-tips">请选择</dd><dd lay-value="imei1" class="">imei1</dd><dd lay-value="imei2" class="">imei2</dd><dd lay-value="imei3" class="">imei3</dd><dd lay-value="imei4" class="">imei4</dd><dd lay-value="imei5" class="">imei5</dd></dl></div>
-            </div>
-        </div>
-        <div class="layui-upload" id="uploadImg">
-            <input name="picUrl" id="picUrlId" type="hidden" class="layui-input">
-            <button type="button" class="layui-btn layui-btn-normal" id="checkImg">
-                <i class="layui-icon"></i>选择图片
-            </button><input class="layui-upload-file" type="file" accept="" name="file" multiple="">
-            <div class="layui-upload-list">
-                <table class="layui-table" id="imgTable">
-                    <thead>
-                    <tr>
-                        <th>图片名</th>
-                        <th>大小</th>
-                        <th>状态</th>
-                        <th>图片路径</th>
-                    </tr>
-                    </thead>
-                    <tbody id="imgList"></tbody>
-                </table>
-            </div>
-            <button type="button" class="layui-btn" id="uploadAction">
-                开始上传
-            </button>
-        </div>
-        <div class="layui-input-block bottom-bar">
-            <button class="layui-btn" lay-submit="" lay-filter="commodityCommit">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-        </div>
-      </form>
+        <input class="register-input" type="text" o-value="this.data.registerCode" placeholder="验证码">
+        <div class="button" o-tap="register">注册</div>
+      </div>
     </div>
   </div>
-  
-</div>
-    
-<!-- 框架script文件 -->
-<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-// 模块 login 的script代码
-var appType = 'test';
-var userInfo = localStorage.getItem("owoUserInfo_" + appType);
+  <!-- 页面[page1]-->
+  <div class="page-1 page" template="page1" style="display: none;">
+    <div class="scale-box">
+      <div class="pannel">
+        <div class="scrrow-box">
+          <div class="top-bar so so2-0">
+            <div class="so so2-1"></div>
+            <div class="so so2-2"></div>
+            <div class="so so2-3"></div>
+            <img class="so so2-4" src="./static/images/card12758.png">
+            <img class="so so2-5" src="./static/images/card12555.png">
+          </div>
+          <div class="so so3-0">
+            <img class="so so3-1" src="./static/images/card22760.png">
+            <img class="so so3-2" src="./static/images/card22761.png">
+            <img class="so so3-3" src="./static/images/card22759.png">
+            <img class="so so3-4" src="./static/images/card22557.png">
+          </div>
+          <div class="card-box">
+            <h2>基础信息</h2>
+            <ul>
+              <li go="page5">品牌管理</li>
+              <li go="page6">状态管理</li>
+              <li go="page7">版本管理</li>
+              <li go="page8">串号管理</li>
+              <li go="page9">网络管理</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="so so-0 bottom-bar">
+        <img class="so so-1" src="./static/images/2753.png" go="page1//moveToLeft/moveFromRight">
+        <img class="so so-2" src="./static/images/2662.png" go="page4//moveToLeft/moveFromRight">
+        <img class="so so-3" src="./static/images/2754.png" go="page2//moveToRight/moveFromLeft">
+        <img class="so so-4" src="./static/images/2625.png">
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page2]-->
+  <div class="page-2 page" template="page2" style="display: none;">
+    <div class="scale-box">
+      <div class="pannel">
+        <div class="so2-0">
+          <img class="so so2-1" src="./static/images/card32609.png" o-tap="searchInfo()">
+          <input class="so so2-2">
+        </div>
+        <div class="info">查询到0种状态结果</div>
+        <ul class="card-list"></ul>
+      </div>
+      <div class="so so-0 bottom-bar">
+        <img class="so so-1" src="./static/images/2753.png" go="page1//moveToLeft/moveFromRight">
+        <img class="so so-2" src="./static/images/2662.png" go="page4//">
+        <img class="so so-3" src="./static/images/2754.png" go="page2//moveToRight/moveFromLeft">
+        <img class="so so-4" src="./static/images/2625.png">
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page3]-->
+  <div class="page3 page" template="page3" style="display: none;">
+    <div class="scale-box">
+      <div class="pannel">
+        <div class="white white-1">
+          <div class="so-0">
+            <img class="so so-1" src="./static/images/2785.png" go="page1">
+            <img class="so so-2" src="./static/images/2787.png">
+            <img class="so so-3" src="./static/images/2788.png">
+          </div>
+          <textarea></textarea>
+          <div class="upload">
+            <img src="./static/images/updata.png">
+          </div>
+        </div>
+        <div class="white">
+          <div class="jiage-bar">￥:2999.00</div>
+        </div>
+        <div class="select-box select3">
+          <select>
+            <option value="volvo">volvo</option>
+          </select>
+          <select>
+            <option value="volvo">volvo</option>
+          </select>
+          <select>
+            <option value="volvo">volvo</option>
+          </select>
+        </div>
+        <ul class="card-li">
+          <div class="item">
+            <span>保修</span>
+            <input type="text">
+          </div>
+          <div class="item">
+            <span>功能</span>
+            <input type="text">
+          </div>
+          <div class="item">
+            <span>外观</span>
+            <input type="text">
+          </div>
+          <div class="item">
+            <span>电池</span>
+            <input type="text">
+          </div>
+          <div class="item">
+            <span>串号</span>
+            <input type="text">
+          </div>
+          <div class="item">
+            <span>备注</span>
+            <input type="text">
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page4]-->
+  <div class="page4 page" template="page4" style="display: none;">
+    <div class="scale-box">
+      <div class="pannel">
+        <div class="white">
+          <div class="so-0">
+            <img class="so so-1" src="./static/images/2785.png" go="page1">
+            <!-- <img class="so so-2" src="./static/images/2787.png">
+          <img class="so so-3" src="./static/images/2788.png"> -->
+          </div>
+        </div>
 
-if (userInfo) {
-  console.log(userInfo);
-  owo.state.userInfo = JSON.parse(userInfo);
-  if (owo.state.userInfo.data == "") owo.state.userInfo.data = {};
+        <form class="layui-form" lay-filter="depart-edit-form" id="depart-edit-form">
+          <input type="hidden" name="id" id="id">
+          <input type="hidden" name="parentId" id="parentId">
+          <div class="layui-form-item">
+            <label class="layui-form-label">名称：</label>
+            <div class="layui-input-block">
+              <input type="text" name="name" required="" lay-verify="required" placeholder="请输入name" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">品牌：</label>
+            <div class="layui-input-block">
+              <select id="brand" name="brand" lay-verify="required">
+                <option value=""></option>
+                <option value="brand1">brand1</option>
+                <option value="brand2">brand2</option>
+                <option value="brand3">brand3</option>
+              </select>
+              <div class="layui-unselect layui-form-select">
+                <div class="layui-select-title">
+                  <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+                </div>
+                <dl class="layui-anim layui-anim-upbit" style="">
+                  <dd lay-value="" class="layui-select-tips layui-this">请选择</dd>
+                  <dd lay-value="brand1" class="">brand1</dd>
+                  <dd lay-value="brand2" class="">brand2</dd>
+                  <dd lay-value="brand3" class="">brand3</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">条件：</label>
+            <div class="layui-input-block">
+              <select id="condition" name="condition" lay-verify="required">
+                <option value=""></option>
+                <option value="condition2">condition2</option>
+                <option value="condition3">condition3</option>
+                <option value="condition4">condition4</option>
+              </select>
+              <div class="layui-unselect layui-form-select">
+                <div class="layui-select-title">
+                  <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+                </div>
+                <dl class="layui-anim layui-anim-upbit">
+                  <dd lay-value="" class="layui-select-tips">请选择</dd>
+                  <dd lay-value="condition2" class="">condition2</dd>
+                  <dd lay-value="condition3" class="">condition3</dd>
+                  <dd lay-value="condition4" class="">condition4</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="layui-row layui-col-space10 layui-form-item">
+            <div class="layui-col-lg6">
+              <label class="layui-form-label">网络：</label>
+              <div class="layui-input-block">
+                <select id="network" name="network" lay-verify="required">
+                  <option value=""></option>
+                  <option value="network3">network3</option>
+                  <option value="network4">network4</option>
+                </select>
+                <div class="layui-unselect layui-form-select">
+                  <div class="layui-select-title">
+                    <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+                  </div>
+                  <dl class="layui-anim layui-anim-upbit">
+                    <dd lay-value="" class="layui-select-tips">请选择</dd>
+                    <dd lay-value="network3" class="">network3</dd>
+                    <dd lay-value="network4" class="">network4</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-row layui-col-space10 layui-form-item">
+            <div class="layui-col-lg6">
+              <label class="layui-form-label">版本：</label>
+              <div class="layui-input-block">
+                <select id="edition" name="edition" lay-verify="required">
+                  <option value=""></option>
+                  <option value="edtion2">edtion2</option>
+                  <option value="edtion3">edtion3</option>
+                  <option value="edtion4">edtion4</option>
+                </select>
+                <div class="layui-unselect layui-form-select">
+                  <div class="layui-select-title">
+                    <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+                  </div>
+                  <dl class="layui-anim layui-anim-upbit">
+                    <dd lay-value="" class="layui-select-tips">请选择</dd>
+                    <dd lay-value="edtion2" class="">edtion2</dd>
+                    <dd lay-value="edtion3" class="">edtion3</dd>
+                    <dd lay-value="edtion4" class="">edtion4</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">IMEI串号：</label>
+            <div class="layui-input-block">
+              <select id="imei" name="imei" lay-verify="required">
+                <option value=""></option>
+                <option value="imei1">imei1</option>
+                <option value="imei2">imei2</option>
+                <option value="imei3">imei3</option>
+                <option value="imei4">imei4</option>
+                <option value="imei5">imei5</option>
+              </select>
+              <div class="layui-unselect layui-form-select">
+                <div class="layui-select-title">
+                  <input type="text" placeholder="请选择" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+                </div>
+                <dl class="layui-anim layui-anim-upbit">
+                  <dd lay-value="" class="layui-select-tips">请选择</dd>
+                  <dd lay-value="imei1" class="">imei1</dd>
+                  <dd lay-value="imei2" class="">imei2</dd>
+                  <dd lay-value="imei3" class="">imei3</dd>
+                  <dd lay-value="imei4" class="">imei4</dd>
+                  <dd lay-value="imei5" class="">imei5</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="layui-upload" id="uploadImg">
+            <input name="picUrl" id="picUrlId" type="hidden" class="layui-input">
 
-  if (typeof owo.state.userInfo.data == "string") {
-    owo.state.userInfo.data = JSON.parse(owo.state.userInfo.data);
-  }
+            <input class="layui-upload-file" type="file" accept="" name="file" multiple="">
+            <div class="layui-upload-list">
+              <table class="layui-table" id="imgTable">
+                <thead>
+                  <tr>
+                    <th>图片名</th>
+                    <th>大小</th>
+                    <th>状态</th>
+                    <th>图片路径</th>
+                  </tr>
+                </thead>
+                <tbody id="imgList"></tbody>
+              </table>
+            </div>
+            <button type="button" class="layui-btn layui-btn-normal" id="checkImg">添加图片</button>
+            <button type="button" class="layui-btn" id="uploadAction">
+              上传图片
+            </button>
+            <button type="button" class="layui-btn" lay-submit="" style="background-color:#f9e342;" lay-filter="commodityCommit">确认添加</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-  getDataFormSession(owo.state.userInfo.username, owo.state.userInfo.session);
-}
+  </div>
+  <!-- 页面[page5]-->
+  <div class="page5 page" template="page5" style="display: none;">
+    <div class="top-bar">
+      <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+      <div class="layui-col-md6">
+        <div class="layui-card">
+          <div class="layui-card-header">商标列表</div>
+          <div class="layui-card-body">
+            <table id="brandTableId" lay-filter="brandTable"></table>
+            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-2" lay-id="brandTableId" style=" height:312px;">
+              <div class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                  <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div>
+                </div>
+                <div class="layui-table-tool-self">
+                  <div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div>
+                  <div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div>
+                  <div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div>
+                </div>
+              </div>
+              <div class="layui-table-box">
+                <div class="layui-table-header">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                      <tr>
+                        <th data-field="id" data-key="2-0-0" class=" layui-unselect">
+                          <div class="layui-table-cell laytable-cell-2-0-0">
+                            <span>ID</span>
+                            <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                          </div>
+                        </th>
+                        <th data-field="value" data-key="2-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-1">
+                            <span>名称</span>
+                          </div>
+                        </th>
+                        <th data-field="2" data-key="2-0-2" class=" layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-2-0-2">
+                            <span>操作</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="layui-table-body layui-table-main" style="height: 198px;">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody>
+                      <tr data-index="0">
+                        <td data-field="id" data-key="2-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-0">1</div>
+                        </td>
+                        <td data-field="value" data-key="2-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-1">brand1</div>
+                        </td>
+                        <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-2-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="1">
+                        <td data-field="id" data-key="2-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-0">2</div>
+                        </td>
+                        <td data-field="value" data-key="2-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-1">brand2</div>
+                        </td>
+                        <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-2-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="2" class="layui-table-hover">
+                        <td data-field="id" data-key="2-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-0">5</div>
+                        </td>
+                        <td data-field="value" data-key="2-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-2-0-1">brand3</div>
+                        </td>
+                        <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-2-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="id" data-key="2-0-0" class=" layui-unselect">
+                            <div class="layui-table-cell laytable-cell-2-0-0">
+                              <span>ID</span>
+                              <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="layui-table-body" style="height: auto;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="id" data-key="2-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-2-0-0">1</div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="id" data-key="2-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-2-0-0">2</div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="layui-table-hover">
+                          <td data-field="id" data-key="2-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-2-0-0">5</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="2" data-key="2-0-2" class=" layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-2-0-2">
+                              <span>操作</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="layui-table-mend"></div>
+                  </div>
+                  <div class="layui-table-body" style="height: auto;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-2-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-2-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="layui-table-hover">
+                          <td data-field="2" data-key="2-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-2-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .laytable-cell-2-0-0 {
+                  width: 60px;
+                }
 
-if (!owo) owo = {};
-if (!owo.tool) owo.tool = {};
-if (!owo.tool.toast) owo.tool.toast = function (text) {
-  alert(text);
-};
+                .laytable-cell-2-0-1 {
+                  width: 200px;
+                }
 
-function getDataFormSession(username, session, callBack) {
-  fetch("//user.hanshu.run/loginSession", {
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      type: appType,
-      username: username,
-      session: session
-    })
-  }).then(function (response) {
-    return response.json();
-  }).then(function (res) {
-    console.log(res);
+                .laytable-cell-2-0-2 {
+                  width: 100px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">添加商标</div>
+          <div class="layui-card-body">
+            <form class="layui-form" lay-filter="brandForm" id="brandFormId">
+              <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="brandCommit">立即提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page6]-->
+  <div class="page6 page" template="page6" style="display: none;">
+    <div class="top-bar">
+      <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+      <div class="layui-col-md6">
+        <div class="layui-card">
+          <div class="layui-card-header">条件列表</div>
+          <div class="layui-card-body">
+            <table id="conditionTableId" lay-filter="conditionTable"></table>
+            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-3" lay-id="conditionTableId" style=" height:312px;">
+              <div class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                  <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div>
+                </div>
+                <div class="layui-table-tool-self">
+                  <div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div>
+                  <div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div>
+                  <div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div>
+                </div>
+              </div>
+              <div class="layui-table-box">
+                <div class="layui-table-header">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                      <tr>
+                        <th data-field="id" data-key="3-0-0" class=" layui-unselect">
+                          <div class="layui-table-cell laytable-cell-3-0-0">
+                            <span>ID</span>
+                            <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                          </div>
+                        </th>
+                        <th data-field="value" data-key="3-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-1">
+                            <span>名称</span>
+                          </div>
+                        </th>
+                        <th data-field="2" data-key="3-0-2" class=" layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-3-0-2">
+                            <span>操作</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="layui-table-body layui-table-main" style="height: 222px;">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody>
+                      <tr data-index="0">
+                        <td data-field="id" data-key="3-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-0">2</div>
+                        </td>
+                        <td data-field="value" data-key="3-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-1">condition2</div>
+                        </td>
+                        <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-3-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="1">
+                        <td data-field="id" data-key="3-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-0">3</div>
+                        </td>
+                        <td data-field="value" data-key="3-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-1">condition3</div>
+                        </td>
+                        <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-3-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="2" class="">
+                        <td data-field="id" data-key="3-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-0">4</div>
+                        </td>
+                        <td data-field="value" data-key="3-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-3-0-1">condition4</div>
+                        </td>
+                        <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-3-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="id" data-key="3-0-0" class=" layui-unselect">
+                            <div class="layui-table-cell laytable-cell-3-0-0">
+                              <span>ID</span>
+                              <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="id" data-key="3-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-3-0-0">2</div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="id" data-key="3-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-3-0-0">3</div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="">
+                          <td data-field="id" data-key="3-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-3-0-0">4</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="2" data-key="3-0-2" class=" layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-3-0-2">
+                              <span>操作</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="layui-table-mend"></div>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-3-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-3-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="">
+                          <td data-field="2" data-key="3-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-3-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .laytable-cell-3-0-0 {
+                  width: 60px;
+                }
 
-    if (res.err === 0) {
-      owo.tool.toast('登陆成功');
-      owo.state.userInfo = res.data;
-      localStorage.removeItem('owoUserInfo_' + appType);
-      if (owo.activePage == 'login') owo.go('page1');
-      owo.notice('loadInfo');
-    } else {
-      owo.go('login');
-      owo.tool.toast(res.message);
-    }
-  });
-} // 定时检测其他设备登录
+                .laytable-cell-3-0-1 {
+                  width: 200px;
+                }
 
+                .laytable-cell-3-0-2 {
+                  width: 100px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">添加条件</div>
+          <div class="layui-card-body">
+            <form class="layui-form" lay-filter="conditionForm" id="conditionFormId">
+              <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="conditionCommit">立即提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page7]-->
+  <div class="page7 page" template="page7" style="display: none;">
+    <div class="top-bar">
+      <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+      <div class="layui-col-md6">
+        <div class="layui-card">
+          <div class="layui-card-header">版本列表</div>
+          <div class="layui-card-body">
+            <table id="editionTableId" lay-filter="editionTable"></table>
+            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-4" lay-id="editionTableId" style=" height:312px;">
+              <div class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                  <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div>
+                </div>
+                <div class="layui-table-tool-self">
+                  <div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div>
+                  <div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div>
+                  <div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div>
+                </div>
+              </div>
+              <div class="layui-table-box">
+                <div class="layui-table-header">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                      <tr>
+                        <th data-field="id" data-key="4-0-0" class=" layui-unselect">
+                          <div class="layui-table-cell laytable-cell-4-0-0">
+                            <span>ID</span>
+                            <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                          </div>
+                        </th>
+                        <th data-field="value" data-key="4-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-1">
+                            <span>名称</span>
+                          </div>
+                        </th>
+                        <th data-field="2" data-key="4-0-2" class=" layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-4-0-2">
+                            <span>操作</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="layui-table-body layui-table-main" style="height: 222px;">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody>
+                      <tr data-index="0">
+                        <td data-field="id" data-key="4-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-0">2</div>
+                        </td>
+                        <td data-field="value" data-key="4-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-1">edtion2</div>
+                        </td>
+                        <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-4-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="1">
+                        <td data-field="id" data-key="4-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-0">3</div>
+                        </td>
+                        <td data-field="value" data-key="4-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-1">edtion3</div>
+                        </td>
+                        <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-4-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="2" class="">
+                        <td data-field="id" data-key="4-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-0">4</div>
+                        </td>
+                        <td data-field="value" data-key="4-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-4-0-1">edtion4</div>
+                        </td>
+                        <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-4-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="id" data-key="4-0-0" class=" layui-unselect">
+                            <div class="layui-table-cell laytable-cell-4-0-0">
+                              <span>ID</span>
+                              <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="id" data-key="4-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-4-0-0">2</div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="id" data-key="4-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-4-0-0">3</div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="">
+                          <td data-field="id" data-key="4-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-4-0-0">4</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="2" data-key="4-0-2" class=" layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-4-0-2">
+                              <span>操作</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="layui-table-mend"></div>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-4-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-4-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="2" class="">
+                          <td data-field="2" data-key="4-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-4-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .laytable-cell-4-0-0 {
+                  width: 60px;
+                }
 
-setInterval(function () {
-  if (owo.state.userInfo && owo.state.userInfo.username && owo.state.userInfo.session) {
-    fetch("//user.hanshu.run/heart", {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        type: appType,
-        username: owo.state.userInfo.username,
-        session: owo.state.userInfo.session
-      })
-    }).then(function (response) {
-      return response.json();
-    }).then(function (res) {
-      console.log(res);
+                .laytable-cell-4-0-1 {
+                  width: 200px;
+                }
 
-      if (res.err !== 0) {
-        owo.tool.toast(res.message);
-        owo.state.userInfo.session = '';
-        localStorage.setItem('owoUserInfo_' + appType, JSON.stringify({}));
-        window.location.replace("");
+                .laytable-cell-4-0-2 {
+                  width: 100px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">添加版本</div>
+          <div class="layui-card-body">
+            <form class="layui-form" lay-filter="editionForm" id="editionFormId">
+              <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="editionCommit">立即提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page8]-->
+  <div class="page8 page" template="page8" style="display: none;">
+    <div class="top-bar">
+      <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+      <div class="layui-col-md6">
+        <div class="layui-card">
+          <div class="layui-card-header">IMEI串号管理</div>
+          <div class="layui-card-body">
+            <table id="imeiTableId" lay-filter="imeiTable"></table>
+            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-5" lay-id="imeiTableId" style=" height:312px;">
+              <div class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                  <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div>
+                </div>
+                <div class="layui-table-tool-self">
+                  <div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div>
+                  <div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div>
+                  <div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div>
+                </div>
+              </div>
+              <div class="layui-table-box">
+                <div class="layui-table-header">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                      <tr>
+                        <th data-field="id" data-key="5-0-0" class=" layui-unselect">
+                          <div class="layui-table-cell laytable-cell-5-0-0">
+                            <span>ID</span>
+                            <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                          </div>
+                        </th>
+                        <th data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">
+                            <span>名称</span>
+                          </div>
+                        </th>
+                        <th data-field="2" data-key="5-0-2" class=" layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <span>操作</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="layui-table-body layui-table-main" style="height: 222px;">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody>
+                      <tr data-index="0">
+                        <td data-field="id" data-key="5-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-0">1</div>
+                        </td>
+                        <td data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">imei1</div>
+                        </td>
+                        <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="1">
+                        <td data-field="id" data-key="5-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-0">2</div>
+                        </td>
+                        <td data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">imei2</div>
+                        </td>
+                        <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="2">
+                        <td data-field="id" data-key="5-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-0">3</div>
+                        </td>
+                        <td data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">imei3</div>
+                        </td>
+                        <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="3">
+                        <td data-field="id" data-key="5-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-0">4</div>
+                        </td>
+                        <td data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">imei4</div>
+                        </td>
+                        <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="4">
+                        <td data-field="id" data-key="5-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-0">5</div>
+                        </td>
+                        <td data-field="value" data-key="5-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-5-0-1">imei5</div>
+                        </td>
+                        <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-5-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="id" data-key="5-0-0" class=" layui-unselect">
+                            <div class="layui-table-cell laytable-cell-5-0-0">
+                              <span>ID</span>
+                              <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="id" data-key="5-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-5-0-0">1</div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="id" data-key="5-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-5-0-0">2</div>
+                          </td>
+                        </tr>
+                        <tr data-index="2">
+                          <td data-field="id" data-key="5-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-5-0-0">3</div>
+                          </td>
+                        </tr>
+                        <tr data-index="3">
+                          <td data-field="id" data-key="5-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-5-0-0">4</div>
+                          </td>
+                        </tr>
+                        <tr data-index="4">
+                          <td data-field="id" data-key="5-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-5-0-0">5</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="2" data-key="5-0-2" class=" layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <span>操作</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="layui-table-mend"></div>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="2">
+                          <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="3">
+                          <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="4">
+                          <td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-5-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .laytable-cell-5-0-0 {
+                  width: 60px;
+                }
+
+                .laytable-cell-5-0-1 {
+                  width: 200px;
+                }
+
+                .laytable-cell-5-0-2 {
+                  width: 100px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">添加IMEI串号</div>
+          <div class="layui-card-body">
+            <form class="layui-form" lay-filter="imeiForm" id="imeiFormId">
+              <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="imeiCommit">立即提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page9]-->
+  <div class="page9 page" template="page9" style="display: none;">
+    <div class="top-bar">
+      <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+      <div class="layui-col-md6">
+        <div class="layui-card">
+          <div class="layui-card-header">网络管理</div>
+          <div class="layui-card-body">
+            <table id="networkTableId" lay-filter="networkTable"></table>
+            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-6" lay-id="networkTableId" style=" height:312px;">
+              <div class="layui-table-tool">
+                <div class="layui-table-tool-temp">
+                  <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div>
+                </div>
+                <div class="layui-table-tool-self">
+                  <div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div>
+                  <div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div>
+                  <div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div>
+                </div>
+              </div>
+              <div class="layui-table-box">
+                <div class="layui-table-header">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <thead>
+                      <tr>
+                        <th data-field="id" data-key="6-0-0" class=" layui-unselect">
+                          <div class="layui-table-cell laytable-cell-6-0-0">
+                            <span>ID</span>
+                            <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                          </div>
+                        </th>
+                        <th data-field="value" data-key="6-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-6-0-1">
+                            <span>名称</span>
+                          </div>
+                        </th>
+                        <th data-field="2" data-key="6-0-2" class=" layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-6-0-2">
+                            <span>操作</span>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="layui-table-body layui-table-main" style="height: 222px;">
+                  <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                    <tbody>
+                      <tr data-index="0">
+                        <td data-field="id" data-key="6-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-6-0-0">3</div>
+                        </td>
+                        <td data-field="value" data-key="6-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-6-0-1">network3</div>
+                        </td>
+                        <td data-field="2" data-key="6-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-6-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr data-index="1">
+                        <td data-field="id" data-key="6-0-0" class="">
+                          <div class="layui-table-cell laytable-cell-6-0-0">4</div>
+                        </td>
+                        <td data-field="value" data-key="6-0-1" class="">
+                          <div class="layui-table-cell laytable-cell-6-0-1">network4</div>
+                        </td>
+                        <td data-field="2" data-key="6-0-2" data-content="" class="layui-table-col-special">
+                          <div class="layui-table-cell laytable-cell-6-0-2">
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-l">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="id" data-key="6-0-0" class=" layui-unselect">
+                            <div class="layui-table-cell laytable-cell-6-0-0">
+                              <span>ID</span>
+                              <span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="id" data-key="6-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-6-0-0">3</div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="id" data-key="6-0-0" class="">
+                            <div class="layui-table-cell laytable-cell-6-0-0">4</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;">
+                  <div class="layui-table-header">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <thead>
+                        <tr>
+                          <th data-field="2" data-key="6-0-2" class=" layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-6-0-2">
+                              <span>操作</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="layui-table-mend"></div>
+                  </div>
+                  <div class="layui-table-body" style="height: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                      <tbody>
+                        <tr data-index="0">
+                          <td data-field="2" data-key="6-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-6-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-index="1">
+                          <td data-field="2" data-key="6-0-2" data-content="" class="layui-table-col-special">
+                            <div class="layui-table-cell laytable-cell-6-0-2">
+                              <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <style>
+                .laytable-cell-6-0-0 {
+                  width: 60px;
+                }
+
+                .laytable-cell-6-0-1 {
+                  width: 200px;
+                }
+
+                .laytable-cell-6-0-2 {
+                  width: 100px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-col-md4">
+        <div class="layui-card">
+          <div class="layui-card-header">添加网络</div>
+          <div class="layui-card-body">
+            <form class="layui-form" lay-filter="networkForm" id="networkFormId">
+              <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="networkCommit">立即提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    // 模块 login 的script代码
+    var appType = 'test';
+    var userInfo = localStorage.getItem("owoUserInfo_" + appType);
+
+    if (userInfo) {
+      console.log(userInfo);
+      owo.state.userInfo = JSON.parse(userInfo);
+      if (owo.state.userInfo.data == "") owo.state.userInfo.data = {};
+
+      if (typeof owo.state.userInfo.data == "string") {
+        owo.state.userInfo.data = JSON.parse(owo.state.userInfo.data);
       }
-    });
-  }
-}, 5000); // function saveUserInfo(userData) {
-//   fetch(`//going.run/userServer?route=updata`, {
-//     method: 'POST',
-//     headers: {
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify({
-//       username:owo.state.userInfo.username,
-//       session: owo.state.userInfo.session,
-//       type: appType,
-//       value: userData
-//     })
-//   }).then((response) => {return response.json();}).then((res) => {
-//     if (res.err === 0) {
-//       owo.tool.toast('提交成功!')
-//     } else {
-//       owo.tool.toast(`提交失败: ${res.message}`)
-//     }
-//   })
-// }
 
-function saveOpenID(openid) {
-  fetch("//going.run/userServer?route=updataWeixin", {
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      username: owo.state.userInfo.username,
-      session: owo.state.userInfo.session,
-      type: appType,
-      openid: openid
-    })
-  }).then(function (response) {
-    return response.json();
-  }).then(function (res) {
-    if (res.err === 0) {
-      owo.tool.toast('提交成功!');
-    } else {
-      owo.tool.toast("\u63D0\u4EA4\u5931\u8D25: " + res.message);
+      getDataFormSession(owo.state.userInfo.username, owo.state.userInfo.session);
     }
-  });
-}
 
-owo.script = {
-  "login": {
-    "data": {
-      "registerusername": "",
-      "registerPassWord": "",
-      "registerPassWordR": "",
-      "registerPhone": "",
-      "registerCode": "",
-      "username": "",
-      "password": "",
-      "toast": null,
-      "session": null,
-      "smsTime": 0
-    },
-    "created": function created() {
-      if (owo.tool.toast) toast = owo.tool.toast;else toast = alert;
-    },
-    "login": function login() {
-      fetch("//user.hanshu.run/login", {
+    if (!owo) owo = {};
+    if (!owo.tool) owo.tool = {};
+    if (!owo.tool.toast) owo.tool.toast = function(text) {
+      alert(text);
+    };
+
+    function getDataFormSession(username, session, callBack) {
+      fetch("//user.hanshu.run/loginSession", {
         method: 'POST',
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
           type: appType,
-          username: this.data.username,
-          password: this.data.password
+          username: username,
+          session: session
         })
-      }).then(function (response) {
+      }).then(function(response) {
         return response.json();
-      }).then(function (res) {
+      }).then(function(res) {
         console.log(res);
 
         if (res.err === 0) {
-          toast('登陆成功'); // do something
-
+          owo.tool.toast('登陆成功');
           owo.state.userInfo = res.data;
-          localStorage.setItem('owoUserInfo_' + appType, JSON.stringify(res.data));
-          setTimeout(function () {
-            owo.go('page1');
-
-            if (window.openid && window.openid != res.data.weixin) {
-              if (window.confirm('是否用微信绑定当前账号?')) {
-                saveOpenID(window.openid);
-              }
-            }
-          }, 0);
+          localStorage.removeItem('owoUserInfo_' + appType);
+          if (owo.activePage == 'login') owo.go('page1');
+          owo.notice('loadInfo');
         } else {
-          toast(res.message);
+          owo.go('login');
+          owo.tool.toast(res.message);
         }
       });
-    },
-    "register": function register() {
-      if (!this.data.registerusername) {
-        toast('用户名不能为空哦!');
-        return;
-      }
+    } // 定时检测其他设备登录
 
-      if (!this.data.registerPassWord) {
-        toast('密码不能为空哦!');
-        return;
-      }
 
-      if (!this.data.registerPassWordR) {
-        toast('重复密码不能为空哦!');
-        return;
-      }
+    setInterval(function() {
+      if (owo.state.userInfo && owo.state.userInfo.username && owo.state.userInfo.session) {
+        fetch("//user.hanshu.run/heart", {
+          method: 'POST',
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            type: appType,
+            username: owo.state.userInfo.username,
+            session: owo.state.userInfo.session
+          })
+        }).then(function(response) {
+          return response.json();
+        }).then(function(res) {
+          console.log(res);
 
-      if (!this.data.registerPhone) {
-        toast('手机号码不能为空!');
-        return;
-      }
-
-      if (this.data.registerPassWord !== this.data.registerPassWordR) {
-        toast('两次输入的密码不一致哦!');
-        return;
-      }
-
-      fetch("//going.run/userServer?route=register", {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          phone: this.data.registerPhone,
-          username: this.data.registerusername,
-          password: this.data.registerPassWord,
-          code: this.data.registerCode
-        })
-      }).then(function (response) {
-        return response.json();
-      }).then(function (res) {
-        if (res.err === 0) {
-          toast('注册成功!');
-          owo.go('/view-loginContent=login');
-        } else {
-          toast("\u6CE8\u518C\u5931\u8D25: " + res.message);
-        }
-      });
-    },
-    "sendSMS": function sendSMS() {
-      if (!this.data.registerPhone) {
-        alert('手机号码不能为空!');
-        return;
-      }
-
-      if (Date.parse(new Date()) - this.data.smsTime < 60000) {
-        alert('发送短信需间隔一分钟!');
-        return;
-      }
-
-      this.data.smsTime = Date.parse(new Date());
-      fetch("//going.run/userServer?route=sendSMS", {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          phone: this.data.registerPhone
-        })
-      }).then(function (response) {
-        return response.json();
-      }).then(function (res) {
-        if (res.err === 0) {
-          toast('短信已发送!');
-        } else {
-          toast("\u77ED\u4FE1\u53D1\u9001\u5931\u8D25: " + res.message);
-        }
-      });
-    },
-    "view": {
-      "loginContent": [{
-        "_name": "login",
-        "_inherit": true
-      }, {
-        "_name": "register",
-        "_inherit": true
-      }]
-    }
-  },
-  "page1": {},
-  "page2": {
-    "created": function created() {
-      this.query('.card-list').style.height = autoScaleInfo.showHeight - 394 + 'px';
-      var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-      var temp = '';
-      fetch("http://49.232.216.171:8080/commodity/all?page=1&limit=10", requestOptions).then(function (response) {
-        return response.json();
-      }).then(function (result) {
-        result.data.forEach(function (element) {
-          temp += "<li class=\"clear\"><div class=\"fl\"><img src=\"" + element.picUrl.replace(';', '') + "\"></div><div class=\"fr\"><h2>" + element.name + "</h2><div class=\"info2\"><span class=\"xj\">99\u65B0</span><span class=\"ch\">\u4E32\u53F7: xxxxxxxxxxx</span></div><div class=\"state\">\u72B6\u6001: \u5DF2\u9500\u552E</div></div></li>";
+          if (res.err !== 0) {
+            owo.tool.toast(res.message);
+            owo.state.userInfo.session = '';
+            localStorage.setItem('owoUserInfo_' + appType, JSON.stringify({}));
+            window.location.replace("");
+          }
         });
-        document.querySelector('.card-list').innerHTML = temp;
-      })["catch"](function (error) {
-        return console.log('error', error);
+      }
+    }, 5000); // function saveUserInfo(userData) {
+    //   fetch(`//going.run/userServer?route=updata`, {
+    //     method: 'POST',
+    //     headers: {
+    //       "Content-Type": "application/json"
+    //     },
+    //     body: JSON.stringify({
+    //       username:owo.state.userInfo.username,
+    //       session: owo.state.userInfo.session,
+    //       type: appType,
+    //       value: userData
+    //     })
+    //   }).then((response) => {return response.json();}).then((res) => {
+    //     if (res.err === 0) {
+    //       owo.tool.toast('提交成功!')
+    //     } else {
+    //       owo.tool.toast(`提交失败: ${res.message}`)
+    //     }
+    //   })
+    // }
+
+    function saveOpenID(openid) {
+      fetch("//going.run/userServer?route=updataWeixin", {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          username: owo.state.userInfo.username,
+          session: owo.state.userInfo.session,
+          type: appType,
+          openid: openid
+        })
+      }).then(function(response) {
+        return response.json();
+      }).then(function(res) {
+        if (res.err === 0) {
+          owo.tool.toast('提交成功!');
+        } else {
+          owo.tool.toast("\u63D0\u4EA4\u5931\u8D25: " + res.message);
+        }
       });
     }
-  },
-  "page3": {},
-  "page4": {}
-};
-</script>
 
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="http://49.232.216.171:8080/static/layui/layui.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
+    owo.script = {
+      "login": {
+        "data": {
+          "registerusername": "",
+          "registerPassWord": "",
+          "registerPassWordR": "",
+          "registerPhone": "",
+          "registerCode": "",
+          "username": "",
+          "password": "",
+          "toast": null,
+          "session": null,
+          "smsTime": 0
+        },
+        "created": function created() {
+          if (owo.tool.toast) toast = owo.tool.toast;
+          else toast = alert;
+        },
+        "login": function login() {
+          fetch("//user.hanshu.run/login", {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              type: appType,
+              username: this.data.username,
+              password: this.data.password
+            })
+          }).then(function(response) {
+            return response.json();
+          }).then(function(res) {
+            console.log(res);
 
-  </body>
+            if (res.err === 0) {
+              toast('登陆成功'); // do something
+
+              owo.state.userInfo = res.data;
+              localStorage.setItem('owoUserInfo_' + appType, JSON.stringify(res.data));
+              setTimeout(function() {
+                owo.go('page1');
+
+                if (window.openid && window.openid != res.data.weixin) {
+                  if (window.confirm('是否用微信绑定当前账号?')) {
+                    saveOpenID(window.openid);
+                  }
+                }
+              }, 0);
+            } else {
+              toast(res.message);
+            }
+          });
+        },
+        "register": function register() {
+          if (!this.data.registerusername) {
+            toast('用户名不能为空哦!');
+            return;
+          }
+
+          if (!this.data.registerPassWord) {
+            toast('密码不能为空哦!');
+            return;
+          }
+
+          if (!this.data.registerPassWordR) {
+            toast('重复密码不能为空哦!');
+            return;
+          }
+
+          if (!this.data.registerPhone) {
+            toast('手机号码不能为空!');
+            return;
+          }
+
+          if (this.data.registerPassWord !== this.data.registerPassWordR) {
+            toast('两次输入的密码不一致哦!');
+            return;
+          }
+
+          fetch("//going.run/userServer?route=register", {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              phone: this.data.registerPhone,
+              username: this.data.registerusername,
+              password: this.data.registerPassWord,
+              code: this.data.registerCode
+            })
+          }).then(function(response) {
+            return response.json();
+          }).then(function(res) {
+            if (res.err === 0) {
+              toast('注册成功!');
+              owo.go('/view-loginContent=login');
+            } else {
+              toast("\u6CE8\u518C\u5931\u8D25: " + res.message);
+            }
+          });
+        },
+        "sendSMS": function sendSMS() {
+          if (!this.data.registerPhone) {
+            alert('手机号码不能为空!');
+            return;
+          }
+
+          if (Date.parse(new Date()) - this.data.smsTime < 60000) {
+            alert('发送短信需间隔一分钟!');
+            return;
+          }
+
+          this.data.smsTime = Date.parse(new Date());
+          fetch("//going.run/userServer?route=sendSMS", {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              phone: this.data.registerPhone
+            })
+          }).then(function(response) {
+            return response.json();
+          }).then(function(res) {
+            if (res.err === 0) {
+              toast('短信已发送!');
+            } else {
+              toast("\u77ED\u4FE1\u53D1\u9001\u5931\u8D25: " + res.message);
+            }
+          });
+        },
+        "view": {
+          "loginContent": [{
+            "_name": "login",
+            "_inherit": true
+          }, {
+            "_name": "register",
+            "_inherit": true
+          }]
+        }
+      },
+      "page1": {},
+      "page2": {
+        "created": function created() {
+          this.query('.card-list').style.height = autoScaleInfo.showHeight - 394 + 'px'; // var requestOptions = {
+          //   method: 'GET',
+          //   redirect: 'follow'
+          // };
+          // let temp = ''
+          // fetch("http://49.232.216.171:8080/commodity/all?page=1&limit=10", requestOptions)
+          //   .then(response => response.json())
+          //   .then(result => {
+          //     result.data.forEach(element => {
+          //       temp += `<li class="clear"><div class="fl"><img src="${element.picUrl.replace(';', '')}"></div><div class="fr"><h2>${element.name}</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li>`
+          //     });
+          //     document.querySelector('.card-list').innerHTML = temp
+          //   })
+          //   .catch(error => console.log('error', error));
+        },
+        "searchInfo": function searchInfo() {
+          var _this = this;
+
+          var myHeaders = new Headers();
+          myHeaders.append("Content-Type", "application/json");
+          var raw = JSON.stringify({
+            "imei": this.query('.so2-2').value
+          });
+          var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+          };
+          fetch("http://49.232.216.171:8080/commodity/query", requestOptions).then(function(response) {
+            return response.json();
+          }).then(function(result) {
+            _this.query('.info').innerText = "\u67E5\u8BE2\u5230" + result.data.length + "\u79CD\u72B6\u6001\u7ED3\u679C";
+            var temp = '';
+            result.data.forEach(function(element) {
+              temp += "<li class=\"clear\"><div class=\"fl\"><img src=\"" + (element.picUrl ? element.picUrl.replace(';', '') : './static/images/card-2.png') + "\"></div><div class=\"fr\"><h2>" + element.name + "</h2><div class=\"info2\"><span class=\"xj\">99\u65B0</span><span class=\"ch\">\u4E32\u53F7: xxxxxxxxxxx</span></div><div class=\"state\">\u72B6\u6001: \u5DF2\u9500\u552E</div></div></li>";
+            });
+            document.querySelector('.card-list').innerHTML = temp;
+          })["catch"](function(error) {
+            return console.log('error', error);
+          });
+        }
+      },
+      "page3": {},
+      "page4": {},
+      "page5": {},
+      "page6": {},
+      "page7": {},
+      "page8": {},
+      "page9": {}
+    };
+  </script>
+
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/layui/layui.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+
+</body>
+
 </html>

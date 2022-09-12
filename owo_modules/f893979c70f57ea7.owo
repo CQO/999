@@ -13,10 +13,10 @@
         input(type="password" o-value="this.data.password" placeholder="密码")
       .button-box
         .button(o-tap="login" o-hover="radial-out") 登录
-        .button(o-hover="radial-out" style=" background-color: burlywood;" go="/view-loginContent=register") 注册
+        //- .button(o-hover="radial-out" style=" background-color: burlywood;" go="/view-loginContent=register") 注册
       .tool-bar
         .left
-        .right(go-route="") 忘记密码
+        //- .right(go-route="") 忘记密码
     .view-register(route="register")
       //- 装饰背景
       img.bg-1(src="//cunchu.site/puge/login/art.png")

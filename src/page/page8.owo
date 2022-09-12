@@ -1,0 +1,44 @@
+<template>
+<div class="page8">
+    <div class="top-bar">
+        <div class="back" go="page1">返回</div>
+    </div>
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">IMEI串号管理</div>
+                <div class="layui-card-body">
+                    <table id="imeiTableId" lay-filter="imeiTable"></table><div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-5" lay-id="imeiTableId" style=" height:312px;"><div class="layui-table-tool"><div class="layui-table-tool-temp"> <div class="layui-btn-container"> <button class="layui-btn layui-btn-sm" lay-event="update">刷新数据</button> </div> </div><div class="layui-table-tool-self"><div class="layui-inline" title="筛选列" lay-event="LAYTABLE_COLS"><i class="layui-icon layui-icon-cols"></i></div><div class="layui-inline" title="导出" lay-event="LAYTABLE_EXPORT"><i class="layui-icon layui-icon-export"></i></div><div class="layui-inline" title="打印" lay-event="LAYTABLE_PRINT"><i class="layui-icon layui-icon-print"></i></div></div></div><div class="layui-table-box"><div class="layui-table-header"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><thead><tr><th data-field="id" data-key="5-0-0" class=" layui-unselect"><div class="layui-table-cell laytable-cell-5-0-0"><span>ID</span><span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span></div></th><th data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1"><span>名称</span></div></th><th data-field="2" data-key="5-0-2" class=" layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"><span>操作</span></div></th></tr></thead></table></div><div class="layui-table-body layui-table-main" style="height: 222px;"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><tbody><tr data-index="0"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">1</div></td><td data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1">imei1</div></td><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="1"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">2</div></td><td data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1">imei2</div></td><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="2"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">3</div></td><td data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1">imei3</div></td><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="3"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">4</div></td><td data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1">imei4</div></td><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="4"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">5</div></td><td data-field="value" data-key="5-0-1" class=""><div class="layui-table-cell laytable-cell-5-0-1">imei5</div></td><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr></tbody></table></div><div class="layui-table-fixed layui-table-fixed-l"><div class="layui-table-header"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><thead><tr><th data-field="id" data-key="5-0-0" class=" layui-unselect"><div class="layui-table-cell laytable-cell-5-0-0"><span>ID</span><span class="layui-table-sort layui-inline"><i class="layui-edge layui-table-sort-asc" title="升序"></i><i class="layui-edge layui-table-sort-desc" title="降序"></i></span></div></th></tr></thead></table></div><div class="layui-table-body" style="height: 0px;"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><tbody><tr data-index="0"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">1</div></td></tr><tr data-index="1"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">2</div></td></tr><tr data-index="2"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">3</div></td></tr><tr data-index="3"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">4</div></td></tr><tr data-index="4"><td data-field="id" data-key="5-0-0" class=""><div class="layui-table-cell laytable-cell-5-0-0">5</div></td></tr></tbody></table></div></div><div class="layui-table-fixed layui-table-fixed-r layui-hide" style="right: -1px;"><div class="layui-table-header"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><thead><tr><th data-field="2" data-key="5-0-2" class=" layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"><span>操作</span></div></th></tr></thead></table><div class="layui-table-mend"></div></div><div class="layui-table-body" style="height: 0px;"><table cellspacing="0" cellpadding="0" border="0" class="layui-table"><tbody><tr data-index="0"><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="1"><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="2"><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="3"><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr><tr data-index="4"><td data-field="2" data-key="5-0-2" data-content="" class="layui-table-col-special"><div class="layui-table-cell laytable-cell-5-0-2"> <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a> </div></td></tr></tbody></table></div></div></div><style>.laytable-cell-5-0-0{ width: 60px; }.laytable-cell-5-0-1{ width: 200px; }.laytable-cell-5-0-2{ width: 100px; }</style></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="layui-card">
+                <div class="layui-card-header">添加IMEI串号</div>
+                <div class="layui-card-body">
+                    <form class="layui-form" lay-filter="imeiForm" id="imeiFormId">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">名称：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="value" required="" lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="imeiCommit">立即提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+</style>

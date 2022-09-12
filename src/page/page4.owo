@@ -5,8 +5,8 @@
       <div class="white">
         <div class="so-0">
           <img class="so so-1" src="@|2785.png|" go="page1">
-          <img class="so so-2" src="@|2787.png|">
-          <img class="so so-3" src="@|2788.png|">
+          <!-- <img class="so so-2" src="@|2787.png|">
+          <img class="so so-3" src="@|2788.png|"> -->
         </div>
       </div>
 
@@ -65,9 +65,8 @@
         </div>
         <div class="layui-upload" id="uploadImg">
             <input name="picUrl" id="picUrlId" type="hidden" class="layui-input">
-            <button type="button" class="layui-btn layui-btn-normal" id="checkImg">
-                <i class="layui-icon"></i>选择图片
-            </button><input class="layui-upload-file" type="file" accept="" name="file" multiple="">
+            
+            <input class="layui-upload-file" type="file" accept="" name="file" multiple="">
             <div class="layui-upload-list">
                 <table class="layui-table" id="imgTable">
                     <thead>
@@ -81,13 +80,11 @@
                     <tbody id="imgList"></tbody>
                 </table>
             </div>
+            <button type="button" class="layui-btn layui-btn-normal" id="checkImg">添加图片</button>
             <button type="button" class="layui-btn" id="uploadAction">
-                开始上传
+                上传图片
             </button>
-        </div>
-        <div class="layui-input-block bottom-bar">
-            <button class="layui-btn" lay-submit="" lay-filter="commodityCommit">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            <button type="button" class="layui-btn" lay-submit="" style="background-color:#f9e342;" lay-filter="commodityCommit">确认添加</button>
         </div>
       </form>
     </div>
@@ -159,5 +156,31 @@ button[type="button"], .bottom-bar button {
   font-size: 30px;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+.layui-table td, .layui-table th {
+  line-height: 36px;
+  font-size: 24px;
+}
+.layui-btn-xs {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  font-size: 24px;
+}
+.layui-upload-list {
+  background-color: white;
+  width: 96%;
+  margin: 20px auto;
+  border-radius: 10px;
+  tr {
+    background-color: transparent;
+  }
+}
+.layui-form-label {
+  width: 150px;
+
+}
+.layui-input-block {
+  margin-left: 185px;
 }
 </style>

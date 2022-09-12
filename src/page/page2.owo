@@ -3,36 +3,10 @@
   .scale-box
     .pannel
       .so2-0
-        img.so.so2-1(src="@|card32609.png|")
+        img.so.so2-1(src="@|card32609.png|" o-tap="searchInfo()")
         input.so.so2-2
-      .info 查询到6种状态结果
+      .info 查询到0种状态结果
       ul.card-list
-        li.clear
-          .fl
-            img(src="http://49.232.216.171:8082//images/admire (5).png")
-          .fr
-            h2 名字名字
-            .info2
-              span.xj 99新
-              span.ch 串号: xxxxxxxxxxx
-            .state 状态: 已销售
-        li.clear
-          .fl
-            img(src="http://49.232.216.171:8082//images/admire (5).png")
-          .fr
-            h2 名字名字
-            .info2
-              span.xj 99新
-              span.ch 串号: xxxxxxxxxxx
-            .state 状态: 已销售
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
-        img(src="@|card-2.png|")
     .so.so-0.bottom-bar
       img.so.so-1(src="@|2753.png|" go="page1//moveToLeft/moveFromRight")
       img.so.so-2(src="@|2662.png|" go="page4//")
@@ -45,21 +19,48 @@
   module.exports = {
     created: function () {
       this.query('.card-list').style.height = autoScaleInfo.showHeight - 394 + 'px'
+      // var requestOptions = {
+      //   method: 'GET',
+      //   redirect: 'follow'
+      // };
+      // let temp = ''
+      // fetch("http://49.232.216.171:8080/commodity/all?page=1&limit=10", requestOptions)
+      //   .then(response => response.json())
+      //   .then(result => {
+      //     result.data.forEach(element => {
+      //       temp += `<li class="clear"><div class="fl"><img src="${element.picUrl.replace(';', '')}"></div><div class="fr"><h2>${element.name}</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li>`
+      //     });
+      //     document.querySelector('.card-list').innerHTML = temp
+      //   })
+      //   .catch(error => console.log('error', error));
+      
+    },
+    searchInfo: function () {
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      var raw = JSON.stringify({
+        "imei": this.query('.so2-2').value
+      });
+
       var requestOptions = {
-        method: 'GET',
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
         redirect: 'follow'
       };
-      let temp = ''
-      fetch("http://49.232.216.171:8080/commodity/all?page=1&limit=10", requestOptions)
+
+      fetch("http://49.232.216.171:8080/commodity/query", requestOptions)
         .then(response => response.json())
         .then(result => {
+          this.query('.info').innerText = `查询到${result.data.length}种状态结果`
+          let temp = ''
           result.data.forEach(element => {
-            temp += `<li class="clear"><div class="fl"><img src="${element.picUrl.replace(';', '')}"></div><div class="fr"><h2>${element.name}</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li>`
+            temp += `<li class="clear"><div class="fl"><img src="${element.picUrl ? element.picUrl.replace(';', '') : '@|card-2.png|'}"></div><div class="fr"><h2>${element.name}</h2><div class="info2"><span class="xj">99新</span><span class="ch">串号: xxxxxxxxxxx</span></div><div class="state">状态: 已销售</div></div></li>`
           });
           document.querySelector('.card-list').innerHTML = temp
         })
         .catch(error => console.log('error', error));
-      
     }
   }
 </script>
